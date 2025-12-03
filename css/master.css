@@ -765,6 +765,7 @@ ul{
 }
 .Dashboard .content .box-twelve .data .icon{
    width: 52px;
+   height: 100%;
     color: white;
 }
 .Dashboard .content .box-twelve .data .info{
@@ -799,7 +800,14 @@ ul{
     padding: 28px 26px;
     transition: 0.3s;
 }
-
+@media (max-width: 367px){
+    .Dashboard .content .box-twelve .data .icon .media{
+        height:100%;
+    }
+        .Dashboard .content .box-twelve .data .media-two{
+            margin: auto 15px auto 0;
+    }
+}
  .box-twelve .data  i:hover{
     transition: 0.3s;
     transform: rotate(5deg);
@@ -1683,7 +1691,6 @@ ul{
     align-items: center;
     text-align: center;
 }
-
 @media (max-width: 767px){
     .Friends{
         grid-template-columns: minmax(200px,1fr);
